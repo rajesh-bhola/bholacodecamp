@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgb(29, 28, 28);
+    color: rgb(229, 229, 229);
+    font-size: 20px; /* Replace with your preferred font size */
+    line-height: 2rem; /* Adjust line height as needed */
+    margin: 0; /* Remove default margin to avoid unexpected spacing */
+    padding: 0; /* Remove default padding */
+}
+.back-color {
+    background: linear-gradient(
+            45deg,
+            rgba(239, 210, 18, 0.7),
+            rgba(91, 14, 214, 0.7) 100%
+          );
+}
+.list-group-light {
+    --mdb-list-group-light-item-py: 1rem;
+    --mdb-list-group-light-item-border: 0px solid var(--mdb-divider-color);
+    --mdb-list-group-light-item-border-width: 0px;
+    --mdb-list-group-light-active-border-radius: 0.5rem;
+    --mdb-list-group-light-active-bg: var(--mdb-primary-bg-subtle);
+    --mdb-list-group-light-active-color: var(--mdb-primary-text-emphasis);
+}
+.anchor a:hover {
+    color: aqua;
+}
+.navbar {
+    --mdb-navbar-box-shadow: 0 4px 12px 0 rgba(var(--mdb-box-shadow-color-rgb), 0.07), 0 2px 4px rgba(var(--mdb-box-shadow-color-rgb), 0.05);
+    --mdb-navbar-padding-top: 0rem;
+    --mdb-navbar-brand-img-margin-right: 0.25rem;
+    box-shadow: var(--mdb-navbar-box-shadow);
+    padding-top: var(--mdb-navbar-padding-top);
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: var(--mdb-list-group-item-padding-y) var(--mdb-list-group-item-padding-x);
+    color: #e8d00b;
+    background-color: var(--mdb-list-group-bg);
+    border: var(--mdb-list-group-border-width) solid var(--mdb-list-group-border-color);
+}
+.colors {
+    color: #e8d00b;
+}
+pre {
+    border-radius: 10px;
+}
+pre[class*=language-] {
+    background: rgb(232, 232, 232);
+}
+.lora-h1 {
+  font-family: "Lora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+.lora-p {
+    font-family: "Lora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.mt-4 {
+    margin-top: 3rem !important;
+}
+.list-group-light .active {
+    border: none;
+    border-radius: var(--mdb-list-group-light-active-border-radius);
+    background-color: #d9d7b8;
+    color: var(--mdb-list-group-light-active-color);
+}
+.list-group-light .list-group-item-action:hover {
+    border-radius: var(--mdb-list-group-light-active-border-radius);
+    background-color: darkgray;
+}
+#list-java, #list-python, #list-javascript, #list-jdbc, #list-javafx, #list-spring, #list-kafka, #list-html, #list-markdown, #list-terms {
+    overflow: auto; /* Make the content of this tab scrollable */
+    max-height: 700px; /* Set a maximum height for scrolling */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Firefox */
+
+}
