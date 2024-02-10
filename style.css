@@ -87,3 +87,13 @@ pre[class*=language-] {
     scrollbar-color: transparent transparent; /* For Firefox */
 
 }
+.btn-color {
+    background-color: #e8d00b;
+}
+.btn-color:hover {
+    background-color: #e8d00b;
+    color: #000;
+}
+.dropdown-menu {
+    background: rgb(57, 55, 15);
+}
