@@ -97,3 +97,6 @@ pre[class*=language-] {
 .dropdown-menu {
     background: rgb(57, 55, 15);
 }
+::marker {
+    color: #e8d00b;
+}
