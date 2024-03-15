@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of Arrays</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Lora:wght@500;700&family=Tilt+Prism&display=swap"
+        rel="stylesheet">
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
+    <!--Prism JS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    <!--Main Navigation-->
+    <header>
+        <!-- Intro settings -->
+        <style>
+            /* Height for devices larger than 576px */
+            @media (min-width: 992px) {
+                #intro {
+                    margin-top: -58.59px;
+                    height: 50vh !important;
+                }
+            }
+
+            .navbar .nav-link {
+                color: #e2e0e0 !important;
+            }
+        </style>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light back-color navbar-dark  d-lg-block">
+            <div class="container-fluid">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" target="" href="../index.html">
+                    <strong>
+                        bhola<span style="color:rgb(13, 237, 114)">{Code}</span>Camp
+                    </strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
+                    aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarExample01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://rajesh-bhola.github.io/" rel="nofollow" target="">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" target="">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" target="">Interviews</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav d-flex flex-row">
+                        <!-- Icons -->
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="" rel="nofollow" target="">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="" rel="nofollow" target="">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="" rel="nofollow" target="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="https://github.com/rajesh-bhola" rel="nofollow" target="">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar -->
+
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mt-4 mb-5">
+        <div class="container">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-md-8 mb-4">
+                    <!--Section: Post data-mdb-->
+                    <section class="border-bottom mb-4">
+                        <h1><b>Basic introduction to an Array</b></h1><br>
+                        <div class="row align-items-center mb-4">
+                            <div class="col-lg-6 text-center text-lg-start mb-3 m-lg-0">
+                                <img src="https://avatars.githubusercontent.com/u/82930824?v=4"
+                                    class="rounded shadow-1-strong me-2" height="35" alt="" loading="lazy" />
+                                <span class="text-muted"> Published on Mar 15, 2024</span><br>
+                                <span style="color:yellow">Rajesh Bhola</span>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Section: Post data-mdb-->
+
+                    <!--Section: Text-->
+                    <h2><b>Introduction</b></h2>
+                    <p>
+                        Welcome to <b class="back-color">bhola<span
+                                style="color:rgb(13, 237, 114)">{Code}</span>Camp</b>, where you can build your logical
+                        problem solving skills by practicing the code programs.
+                    </p><br>
+
+                    <p>
+                        In this article, I am just writing about basics of arrays in java. I will also explain the
+                        syntax, declaration, initialization and creation of an array and some of the valuable points. Without delay lets get
+                        started...
+                    </p><br>
+                    <ul>
+                    <li>
+                        <h5>How to declare, initialize and create an 1-D array</h5>
+                    </li>               
+<pre>
+    <code class="language-java">
+        int[] nums = new int[5];
+        nums[0] = 12;
+        nums[1] = 9;
+        int arr[] = {2, 5, 6, 9, 7, 4, 3};
+    </code>
+</pre><br>
+                    <li>
+                        <h5>Different types of primitives and wrappers object of arrays</h5>
+                    </li>
+<pre>
+<code class="language-java">
+    byte[] a1 = new byte[2];
+    Byte[] a2 = new Byte[2];
+    short[] a3 = new short[2];
+    Short[] a4 = new Short[2];
+    char[] a5 = new char[2];
+    Character[] a6 = new Character[2];
+    int[] a7 = new int[3];
+    Integer[] a8 = new Integer[7];
+    long[] a9 = new long[2];
+    Long[] a10 = new Long[2];
+    float[] a11 = new float[2];
+    Float[] a12 = new Float[2];
+    double[] a13 = new double[2];
+    Double[] a14 = new Double[2];
+    boolean[] a15 = new boolean[2];
+    Boolean[] a16 = new Boolean[2];
+</code>
+</pre><br> 
+                    <li>
+                        <h5>Array with size 0</h5>
+                    </li>
+<pre>
+<code class="language-java">
+    int[] a17 = new int[0];
+</code>
+</pre><br>
+                    <li>
+                        <h5>Data types allowed to specify array size are : </h5>
+                    </li>
+<pre>
+<code class="language-java">
+    byte b = 10;
+    short s = 14;
+    char ch = 'A';
+    int i = 123;
+    int[] a18 = new int[b];
+    int[] a19 = new int[s];
+    int[] a20 = new int[ch];
+    int[] a21 = new int[i];
+    long[] l = new long[s];
+    float[] f = new float[i];
+    boolean[] bl = new boolean[i];
+</code>
+</pre><br>
+                    <li>
+                        <h5>Maximum array size is value of int size </h5>
+                    </li>
+<pre>
+<code class="language-java">
+    int[] a22 = new int[2147483647]; // may give OutOfMemoryError
+</code>
+</pre><br>
+
+                    
+                    <p><b class="colors">OutOfMemoryError:</b> occurs because the JVM (Java Virtual Machine) cannot allocate an array of size 2147483647 due to memory limitations. This error happens because the maximum size of an array in Java is Integer.MAX_VALUE, which is 2147483647. <br><br>
+                        When you create an array in Java, the JVM needs to allocate memory for the array elements. Each element of an integer array (int[]) takes up 4 bytes (32 bits) of memory. So, for an array of size 2147483647, the JVM would need to allocate approximately 2147483647 * 4 = 8589934588 bytes, which is roughly 8 GB of memory.
+                    <br><br>
+                    The JVM has limits on the amount of memory it can allocate for an array, and these limits are often lower than the total available memory on the system. When you attempt to create an array that exceeds these limits, the JVM throws an OutOfMemoryError to indicate that it cannot allocate the requested memory.
+                    </p><br>
+                    <li>
+                        <h5>Print object reference - classname@hexadecimalstring</h5>
+                    </li>
+<pre>
+<code class="language-java">
+    int[] a23 = new int[3];
+    System.out.println(a23);
+</code>
+</pre><br>
+                    <li>
+                        <h5>Adding element to the array</h5>
+                    </li>
+<pre>
+<code class="language-java">
+    a23[1] = 123;
+</code>
+</pre><br>
+                    <li>
+                        <h5>Accessing the elements from the array</h5>
+                    </li>
+<pre>
+<code class="language-java">
+    System.out.println(a23[0]); // print default value 0
+    System.out.println(a23[1]);
+</code>
+</pre><br>
+                    <li>
+                        <h5>Updating element at 0 index</h5>
+                    </li>
+<pre>
+<code class="language-java">
+    a23[0] = 100;
+    System.out.println(a23[0]);
+</code>
+</pre><br>
+                    <li>
+                        <h5>Print the length / size of the array</h5>
+                    </li>
+<pre>
+<code class="language-java">
+    int[] a24 = new int[5];
+    System.out.println(a24.length);
+</code>
+</pre><br>
+<li>
+    <h5>Anonymous array creation for instant use</h5>
+</li>
+<pre>
+<code class="language-java">
+    System.out.println(new int[]{1, 2, 3, 4}); // pass in a method
+</code>
+</pre><br>
+                    </ul> 
+                    <p><i class="colors">Great!</i> This is all about basics of arrays. 
+                        You can find the complete code below. 
+                    </p><br>
+                    <h4><b>Full Code:</b></h4>
+<pre>
+<code class="language-java">
+package com.bholacodecamp.arrays;
+
+public class Basics_Of_Array {
+  public static void main(String[] args) {
+
+    // How to declare, initialize and create an 1-D array
+    int[] nums = new int[5];
+    nums[0] = 12;
+    nums[1] = 9;
+    int arr[] = {2, 5, 6, 9, 7, 4, 3};
+
+    // Different types of primitives and wrappers object of arrays
+    byte[] a1 = new byte[2];
+    Byte[] a2 = new Byte[2];
+    short[] a3 = new short[2];
+    Short[] a4 = new Short[2];
+    char[] a5 = new char[2];
+    Character[] a6 = new Character[2];
+    int[] a7 = new int[3];
+    Integer[] a8 = new Integer[7];
+    long[] a9 = new long[2];
+    Long[] a10 = new Long[2];
+    float[] a11 = new float[2];
+    Float[] a12 = new Float[2];
+    double[] a13 = new double[2];
+    Double[] a14 = new Double[2];
+    boolean[] a15 = new boolean[2];
+    Boolean[] a16 = new Boolean[2];
+
+    // Array with size 0
+    int[] a17 = new int[0];
+
+    // Data types allowed to specify array size are
+    byte b = 10;
+    short s = 14;
+    char ch = 'A';
+    int i = 123;
+    int[] a18 = new int[b];
+    int[] a19 = new int[s];
+    int[] a20 = new int[ch];
+    int[] a21 = new int[i];
+    long[] l = new long[s];
+    float[] f = new float[i];
+    boolean[] bl = new boolean[i];
+
+    // Maximum array size is value of int size
+    int[] a22 = new int[2147483647]; // may give OutOfMemoryError
+
+    // Print object reference - classname@hexadecimalstring
+    int[] a23 = new int[3];
+    System.out.println(a23);
+
+    // Adding element to the array
+    a23[1] = 123;
+
+    // Accessing the elements from the array
+    System.out.println(a23[0]); // print default value 0
+    System.out.println(a23[1]);
+
+    // Updating element at 0 index
+    a23[0] = 100;
+    System.out.println(a23[0]);
+
+    // Print the length / size of the array
+    int[] a24 = new int[5];
+    System.out.println(a24.length);
+
+    // Anonymous array creation for instant use
+    System.out.println(new int[]{1, 2, 3, 4}); // pass in a method
+
+  }
+}        
+</code>
+</pre><br>
+
+
+                    </section>
+                    <!--Section: Text-->
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-4 mb-4">
+                    <!--Section: Sidebar-->
+                    <section class="sticky-top" style="top: 80px;">
+                        <!--Section: Ad-->
+
+                        <!--Section: Ad-->
+
+                        <!--Section: Video-->
+                        <section class="text-center">
+                            <h5 class="mb-4">Subscribe to my Youtube channel</h5>
+
+                            <div class="embed-responsive embed-responsive-16by9 shadow-4-strong">
+                                <iframe src="https://www.youtube.com/embed/F8rxjTnE68I" title="Nice background scenery"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </section>
+                        <!--Section: Video-->
+                    </section>
+                    <!--Section: Sidebar-->
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class="bg-dark text-lg-start">
+
+        <div class="text-center py-4 align-items-center">
+            <p>Follow and Share <b class="back-color">bhola<span style="color:rgb(13, 237, 114)">{Code}</span>Camp</b>
+                on social media</p>
+            <a href="" class="btn back-color m-1" role="button" data-mdb-ripple-init rel="nofollow" target="">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="" class="btn back-color m-1" role="button" rel="nofollow" data-mdb-ripple-init target="">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="btn back-color m-1" role="button" rel="nofollow" data-mdb-ripple-init target="">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/rajesh-bhola" class="btn back-color m-1" role="button" rel="nofollow"
+                data-mdb-ripple-init target="">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright:
+            <a class="text-light" style="
+                background: linear-gradient(
+                    45deg,
+                    rgba(239, 210, 18, 0.7),
+                    rgba(91, 14, 214, 0.7) 100%
+                );
+                " href="../index.html">bholaCodeCamp
+            </a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!--Footer-->
+
+    <!-- MDB -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+    <!--Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Prism JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-java.min.js"></script>
+    <!--Custom JS-->
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
