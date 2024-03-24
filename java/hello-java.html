@@ -10,6 +10,10 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon_io/site.webmanifest">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,9 +52,8 @@
             <div class="container-fluid">
                 <!-- Navbar brand -->
                 <a class="navbar-brand" target="" href="../index.html">
-                    <strong>
-                        bhola<span style="color:rgb(13, 237, 114)">{Code}</span>Camp
-                    </strong>
+                    <b class="logo-back-color">bhola<span
+                        style="color:rgb(13, 237, 114)">{Code}</span>Camp</b>
                 </a>
                 <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
                     aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,6 +73,35 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../interviews.html" target="">Interviews</a>
                         </li>
+                        <li>
+                            <div class="dropdown mt-2">
+                              <button
+                                class="btn btn-warnings dropdown-toggle"
+                                type="button"
+                                id="dropdownMenuButton"
+                                data-mdb-dropdown-init
+                                data-mdb-ripple-init
+                                aria-expanded="false"
+                              >
+                                Learn Topics
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" 
+                                  href="/topics/java.html">Java</a></li>
+                              <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">Python</a></li>
+                              <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">JavaScript</a>
+                              </li>
+                              <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#"> JDBC</a></li>
+                              <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">JavaFX</a></li>
+                              <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">Spring Framework</a>
+                              </li>
+                              <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#"> Apache Kafka</a></li>
+                              <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">HTML/CSS</a></li>
+                              <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">Markdown</a></li>
+                              <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">Software Terms</a></li>
+                              </ul>
+                            </div>
+                          </li>
                     </ul>
 
                     <ul class="navbar-nav d-flex flex-row">
@@ -127,7 +159,7 @@
                     <!--Section: Text-->
                     <h2><b>Introduction</b></h2>
                     <p>
-                        Welcome to <b class="back-color">bhola<span
+                        Welcome to <b class="back-color-1">bhola<span
                                 style="color:rgb(13, 237, 114)">{Code}</span>Camp</b>, where you can build your logical
                         problem solving skills by practicing the code programs.
                     </p><br>
@@ -165,12 +197,40 @@
                         methods to output data. The println method is used to print the specified string followed by a
                         newline character, so each call to println results in a new line in the console.
                     </p><br>
+                    <h4><b>Compile</b></h4>
+                    <p>
+                        To compile java program go to the folder where you have saved your .java file. From there open the cmd or terminal then run the following command to compile the program.
+                    </p>
+<pre>
+<code class="language-java">
+> javac Test.java
+</code>
+</pre><br>
+                    <p>
+                        This will create a Test.class file which is bytecode 0 and 1 format.
+                    </p><br>
+                    <h4><b>Run</b></h4>
+                    <p>
+                        To run the java program you can type the below command in the cmd or terminal.
+                    </p>
+<pre>
+<code class="language-java">
+> java Test
+</code>
+</pre><br>
+                    <p>
+                        This will run the java program and get the result in the console. That's it! You've written and run your first Java program. Congratulations!
+                    </p><br>
                     <h4><b>Output:</b></h4>
 <pre>
     <code class="language-bash">
       Hello Java!
     </code>
 </pre><br>
+                    <p>
+                        Thank you for reading ❤️ & See you in the next blog post.
+                    </p><br>
+                    <p>Happy Coding !!!</p>
 
 
                     </section>
@@ -188,15 +248,38 @@
 
                         <!--Section: Video-->
                         <section class="text-center">
-                            <h5 class="mb-4">Subscribe to my Youtube channel</h5>
+                           
+                            <div class="card sticky-top">
+                                 <div class="card-body">
+                                  <h5 class=""><u>Topics</u></h5>
+                                  
+                                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2 active">Java</button>
+                                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">Python</button>
+                                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">JavaScript</button>
+                                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">HTML 5</button>
+                                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">CSS 3</button>
+                                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">Kafka</button>
+                                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">SQL</button>
+                                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">ksqlDB</button>
+                                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">Snowflake</button>
+                                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">Spring Framework</button>
+                                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">Microservices</button>
+                                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">Others</button>
+                                </div><br>
+                                <h5 class="mb-0"><u>Subscribe to my Youtube channel</u></h5>
+                                <div class="embed-responsive embed-responsive-16by9 shadow-4-strong">
+                                    <iframe src="https://www.youtube.com/embed/F8rxjTnE68I" title="Nice background scenery"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div><br>
+                          
 
-                            <div class="embed-responsive embed-responsive-16by9 shadow-4-strong">
-                                <iframe src="https://www.youtube.com/embed/F8rxjTnE68I" title="Nice background scenery"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </section>
-                        <!--Section: Video-->
+                        
+
+                        
+                    </section>
+                    <!--Section: Video-->
                     </section>
                     <!--Section: Sidebar-->
                 </div>
@@ -211,8 +294,7 @@
     <footer class="bg-dark text-lg-start">
 
         <div class="text-center py-4 align-items-center">
-            <p>Follow and Share <b class="back-color">bhola<span style="color:rgb(13, 237, 114)">{Code}</span>Camp</b>
-                on social media</p>
+            <p>Follow and Share on social media</p>
             <a href="" class="btn back-color m-1" role="button" data-mdb-ripple-init rel="nofollow" target="">
                 <i class="fab fa-youtube"></i>
             </a>
@@ -231,13 +313,8 @@
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2024 Copyright:
-            <a class="text-light" style="
-                background: linear-gradient(
-                    45deg,
-                    rgba(239, 210, 18, 0.7),
-                    rgba(91, 14, 214, 0.7) 100%
-                );
-                " href="../index.html">bholaCodeCamp
+            <a class="text-light" href="../index.html">
+                <b class="back-color-1">bhola<span style="color:rgb(13, 237, 114)">{Code}</span>Camp</b>
             </a>
         </div>
         <!-- Copyright -->

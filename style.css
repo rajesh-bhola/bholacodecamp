@@ -7,7 +7,7 @@ html {
 }
 body {
     background-color: rgb(29, 28, 28);
-    color: rgb(229, 229, 229);
+    color: rgb(196, 193, 193);
     font-size: 20px; /* Replace with your preferred font size */
     line-height: 2rem; /* Adjust line height as needed */
     margin: 0; /* Remove default margin to avoid unexpected spacing */
@@ -18,7 +18,25 @@ body {
             45deg,
             rgba(239, 210, 18, 0.7),
             rgba(91, 14, 214, 0.7) 100%
-          );
+    );
+}
+.back-color-1 {
+    background: linear-gradient(
+            45deg,
+            rgba(239, 210, 18, 0.7),
+            rgba(91, 14, 214, 0.7) 100%
+    );
+    padding: 5px;
+    border-radius: 0.25rem;
+}
+.logo-back-color {
+    background: linear-gradient(
+            45deg,
+            rgba(33, 28, 1, 0.7),
+            rgba(31, 2, 78, 0.7) 100%
+    );
+    padding: 5px;
+    border-radius: 0.25rem;
 }
 .list-group-light {
     --mdb-list-group-light-item-py: 1rem;
@@ -37,6 +55,26 @@ body {
     --mdb-navbar-brand-img-margin-right: 0.25rem;
     box-shadow: var(--mdb-navbar-box-shadow);
     padding-top: var(--mdb-navbar-padding-top);
+}
+.btn-warnings {
+    background-color: #e8d00b;
+    color: #000;
+}
+.btn-warnings:hover {
+    background-color: #e8d00b;
+    color: #000;
+}
+.btn-warnings:visited {
+    background-color: #e8d00b;
+    color: #000;
+}
+.list-group-item-menu {
+    position: relative;
+    display: block;
+    padding: var(--mdb-list-group-item-padding-y) var(--mdb-list-group-item-padding-x);
+    color: #141413;
+    background-color: #fcf7bc;
+    border: var(--mdb-list-group-border-width) solid var(--mdb-list-group-border-color);
 }
 .list-group-item {
     position: relative;
@@ -99,4 +137,10 @@ pre[class*=language-] {
 }
 li::marker {
     color: #e8d00b;
+}
+.card {
+    background-color: #222121;
+}
+.card h5 {
+    color: rgb(229, 231, 232);
 }

@@ -14,6 +14,10 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon_io/site.webmanifest">
 
   <!--Custom CSS-->
   <link rel="stylesheet" href="style.css">
@@ -42,9 +46,10 @@
       <div class="container-fluid">
         <!-- Navbar brand -->
         <a class="navbar-brand" target="" href="index.html">
-          <strong>
-            bhola<span style="color:rgb(13, 237, 114)">{Code}</span>Camp
-          </strong>
+          
+            <b class="logo-back-color">bhola<span
+              style="color:rgb(13, 237, 114)">{Code}</span>Camp</b>
+          
         </a>
         <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
           aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,6 +69,35 @@
             <li class="nav-item">
               <a class="nav-link" href="interviews.html" target="">Interviews</a>
             </li>
+            <li>
+              <div class="dropdown mt-2">
+                <button
+                  class="btn btn-warnings dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-mdb-dropdown-init
+                  data-mdb-ripple-init
+                  aria-expanded="false"
+                >
+                  Learn Topics
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="list-group-item-menu list-group-item-action px-3 border-0" 
+                    href="/topics/java.html">Java</a></li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">Python</a></li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">JavaScript</a>
+                </li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#"> JDBC</a></li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">JavaFX</a></li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">Spring Framework</a>
+                </li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#"> Apache Kafka</a></li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">HTML/CSS</a></li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">Markdown</a></li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">Software Terms</a></li>
+                </ul>
+              </div>
+            </li>
           </ul>
 
           <ul class="navbar-nav d-flex flex-row">
@@ -75,7 +109,7 @@
             </li>
             <li class="nav-item me-3 me-lg-0">
               <a class="nav-link" href="" rel="nofollow" target="">
-                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-linkedin"></i>
               </a>
             </li>
             <li class="nav-item me-3 me-lg-0">
@@ -125,45 +159,19 @@
             <a class="list-group-item list-group-item-action active px-3 border-0" id="list-profile-list"
               data-mdb-list-init href="#list-profile" role="tab" aria-controls="list-profile">About Me</a>
             <hr>
-            <button class="btn btn-color dropdown-toggle" type="button" id="dropdownExampleAnimation"
-              data-mdb-dropdown-init data-mdb-ripple-init aria-expanded="false" data-mdb-dropdown-animation="off">
-              Choose Topics to Learn
-            </button><br>
-            <ul class="dropdown-menu" aria-labelledby="dropdownExampleAnimation">
-              <li><a class="list-group-item list-group-item-action px-3 border-0" id="list-java-list" data-mdb-list-init
-                  href="#list-java" role="tab" aria-controls="list-java">Java</a></li>
-              <li><a class="list-group-item list-group-item-action px-3 border-0" id="list-python-list"
-                  data-mdb-list-init href="#list-python" role="tab" aria-controls="list-python">Python</a></li>
-              <li><a class="list-group-item list-group-item-action px-3 border-0" id="list-javascript-list"
-                  data-mdb-list-init href="#list-javascript" role="tab" aria-controls="list-javascript">JavaScript</a>
-              </li>
-              <li><a class="list-group-item list-group-item-action px-3 border-0" id="list-jdbc-list" data-mdb-list-init
-                  href="#list-jdbc" role="tab" aria-controls="list-jdbc"> JDBC</a></li>
-              <li><a class="list-group-item list-group-item-action px-3 border-0" id="list-javafx-list"
-                  data-mdb-list-init href="#list-javafx" role="tab" aria-controls="list-javafx">JavaFX</a></li>
-              <li><a class="list-group-item list-group-item-action px-3 border-0" id="list-spring-list"
-                  data-mdb-list-init href="#list-spring" role="tab" aria-controls="list-spring">Spring Framework</a>
-              </li>
-              <li><a class="list-group-item list-group-item-action px-3 border-0" id="list-kafka-list"
-                  data-mdb-list-init href="#list-kafka" role="tab" aria-controls="list-kafka"> Apache Kafka</a></li>
-              <li><a class="list-group-item list-group-item-action px-3 border-0" id="list-html-list" data-mdb-list-init
-                  href="#list-html" role="tab" aria-controls="list-html">HTML/CSS</a></li>
-              <li><a class="list-group-item list-group-item-action px-3 border-0" id="list-markdown-list"
-                  data-mdb-list-init href="#list-markdown" role="tab" aria-controls="list-markdown">Markdown</a></li>
-              <li><a class="list-group-item list-group-item-action px-3 border-0" id="list-terms-list"
-                  data-mdb-list-init href="#list-terms" role="tab" aria-controls="list-terms">Software Terms</a></li>
-            </ul>
+            
+            
 
-            <a href="" class="btn back-color m-1" role="button" data-mdb-ripple-init rel="nofollow" target="">
+            <a href="" class="btn back-color m-2" role="button" data-mdb-ripple-init rel="nofollow" target="">
               <i class="fab fa-youtube"></i>
             </a>
-            <a href="" class="btn back-color m-1" role="button" rel="nofollow" data-mdb-ripple-init target="">
+            <a href="" class="btn back-color m-2" role="button" rel="nofollow" data-mdb-ripple-init target="">
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="" class="btn back-color m-1" role="button" rel="nofollow" data-mdb-ripple-init target="">
+            <a href="" class="btn back-color m-2" role="button" rel="nofollow" data-mdb-ripple-init target="">
               <i class="fab fa-twitter"></i>
             </a>
-            <a href="https://github.com/rajesh-bhola" class="btn back-color m-1" role="button" rel="nofollow"
+            <a href="https://github.com/rajesh-bhola" class="btn back-color m-2" role="button" rel="nofollow"
               data-mdb-ripple-init target="">
               <i class="fab fa-github"></i>
             </a><br>
@@ -187,8 +195,9 @@
                 </li><br>
                 <li style="list-style-type:none;" class="justify-content-center align-items-center">
                   <p>
-                    I am the owner of this <b class="back-color">bhola<span
-                        style="color:rgb(13, 237, 114)">{Code}</span>Camp</b> website. This name was inspired by myself
+                    I am the owner of this <b class="back-color-1">bhola<span
+                      style="color:rgb(13, 237, 114)">{Code}</span>Camp</b>
+                   website. This name was inspired by myself
                     and also sometimes I did some crazy things and felt like I've never done before. I am a software
                     Engineer by profession. I would love to solve problems and take the challeneges to complete the tasks.
                   </p>
@@ -356,7 +365,7 @@
   <footer class="bg-dark text-lg-start">
 
     <div class="text-center py-4 align-items-center">
-      <p>Follow and Share <b class="back-color">bhola<span style="color:rgb(13, 237, 114)">{Code}</span>Camp</b> on
+      <p>Follow and Share on
         social media</p>
       <a href="" class="btn back-color m-1" role="button" data-mdb-ripple-init rel="nofollow" target="">
         <i class="fab fa-youtube"></i>
@@ -376,13 +385,9 @@
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2024 Copyright:
-      <a class="text-light" style="
-          background: linear-gradient(
-            45deg,
-            rgba(239, 210, 18, 0.7),
-            rgba(91, 14, 214, 0.7) 100%
-          );
-        " href="index.html">bholaCodeCamp</a>
+      <a class="text-light" href="index.html">
+        <b class="back-color-1">bhola<span style="color:rgb(13, 237, 114)">{Code}</span>Camp</b>
+      </a>
     </div>
     <!-- Copyright -->
   </footer>

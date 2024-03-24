@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bholaCodeCamp</title>
+  <!-- Add the favicon -->
+  <link rel="icon" href="bholacodecamp_logo.png" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicon_io/site.webmanifest">
+
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+  <header>
+    <style>
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #intro {
+          margin-top: -58.59px;
+          height: 50vh !important;
+        }
+      }
+
+      .navbar .nav-link {
+        color: #e2e0e0 !important;
+      }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light back-color navbar-dark  d-lg-block" style="z-index: 2000">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" target="" href="index.html">
+          <b class="logo-back-color">bhola<span
+            style="color:rgb(13, 237, 114)">{Code}</span>Camp</b>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://rajesh-bhola.github.io/" rel="nofollow" target="">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" target="">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../interviews.html" target="">Interviews</a>
+            </li>
+            <li>
+              <div class="dropdown mt-2">
+                <button
+                  class="btn btn-warnings dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-mdb-dropdown-init
+                  data-mdb-ripple-init
+                  aria-expanded="false"
+                >
+                  Learn Topics
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="list-group-item-menu list-group-item-action px-3 border-0" 
+                    href="/topics/java.html">Java</a></li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">Python</a></li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">JavaScript</a>
+                </li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#"> JDBC</a></li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">JavaFX</a></li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">Spring Framework</a>
+                </li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#"> Apache Kafka</a></li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">HTML/CSS</a></li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">Markdown</a></li>
+                <li><a class="list-group-item-menu list-group-item-action px-3 border-0" href="#">Software Terms</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav d-flex flex-row">
+            <!-- Icons -->
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="" rel="nofollow" target="">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="" rel="nofollow" target="">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="" rel="nofollow" target="">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://github.com/rajesh-bhola" rel="nofollow" target="">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Background image -->
+    <div id="intro" class="bg-image vh-100 shadow-1-strong">
+      <div class="mask" style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(239, 210, 18, 0.7),
+                  rgba(91, 14, 214, 0.7) 100%
+                );
+              ">
+        <div class="container d-flex align-items-center justify-content-center text-center h-100">
+          <div class="text-white" data-mdb-theme="dark">
+            <h1 class="mb-3"> <b>Java</b></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12 col-md-2 text-center">
+          <div class="list-group list-group-light text-light" id="list-tab" role="tablist">
+        
+            <a href="" class="btn back-color m-2" role="button" data-mdb-ripple-init rel="nofollow" target="">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="" class="btn back-color m-2" role="button" rel="nofollow" data-mdb-ripple-init target="">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="btn back-color m-2" role="button" rel="nofollow" data-mdb-ripple-init target="">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/rajesh-bhola" class="btn back-color m-2" role="button" rel="nofollow"
+              data-mdb-ripple-init target="">
+              <i class="fab fa-github"></i>
+            </a><br>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <!--Java starts-->
+          <div class="" id="list-java" role="tabpanel" aria-labelledby="list-java-list">
+            <h4 class="text-center">Basics</h4><hr>
+            <ul class="list-group list-group-light">
+              <a href="/java/introduction-to-java.html">
+                <li class="list-group-item">1. Introduction to Java Programming</li>
+              </a>
+              <a href="/java/hello-java.html">
+                <li class="list-group-item">2. "Hello Java!" program in java</li>
+              </a>
+              <br>
+              <h4 class="text-center">Arrays</h4><hr>
+              <a href="/java/basics-of-arrays.html">
+                <li class="list-group-item">1. Basic introduction to arrays</li>
+              </a>
+              
+
+            </ul>
+          </div>
+          <!--Java end-->
+        </div>
+
+        <div class="col-12 col-md-4">
+          <!--Section: Video-->
+          <section class="text-center">
+                           
+            <div class="card sticky-top">
+                 <div class="card-body">
+                  <h5 class=""><u>Topics</u></h5>
+                  
+                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2 active">Java</button>
+                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">Python</button>
+                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">JavaScript</button>
+                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">HTML 5</button>
+                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">CSS 3</button>
+                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">Kafka</button>
+                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">SQL</button>
+                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">ksqlDB</button>
+                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">Snowflake</button>
+                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">Spring Framework</button>
+                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">Microservices</button>
+                    <button type="button" class="btn btn-outline-warning rounded-pill mb-2">Others</button>
+                </div><br>
+                <h5 class="mb-0"><u>Subscribe to my Youtube channel</u></h5>
+                <div class="embed-responsive embed-responsive-16by9 shadow-4-strong">
+                    <iframe src="https://www.youtube.com/embed/F8rxjTnE68I" title="Nice background scenery"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div><br>
+    </section>
+    <!--Section: Video-->
+        </div>
+
+      </div>
+
+      <br>
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="bg-dark text-lg-start">
+
+    <div class="text-center py-4 align-items-center">
+      <p>Follow and Share on social media</p>
+      <a href="" class="btn back-color m-1" role="button" data-mdb-ripple-init rel="nofollow" target="">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="" class="btn back-color m-1" role="button" rel="nofollow" data-mdb-ripple-init target="">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="btn back-color m-1" role="button" rel="nofollow" data-mdb-ripple-init target="">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://github.com/rajesh-bhola" class="btn back-color m-1" role="button" rel="nofollow"
+        data-mdb-ripple-init target="">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright:
+      <a class="text-light" href="index.html">
+        <b class="back-color-1">bhola<span style="color:rgb(13, 237, 114)">{Code}</span>Camp</b>
+      </a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+  <!--Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!--Custom JS-->
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
